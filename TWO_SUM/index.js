@@ -1,11 +1,7 @@
-
-const num = [3,2,4];
+const num = [3, 2, 4];
 const target = 6;
-
 function myFunc(array) {
-
     let output = [];
-
     for (let i = 0; i < array.length; i++) {
         for (let j = 0; j < array.length; j++) {
             let value = array[i] + array[j];
@@ -17,5 +13,4 @@ function myFunc(array) {
         }
     }
 }
-
 console.log(myFunc(num))
