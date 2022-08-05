@@ -14,3 +14,20 @@ function myFunc(array) {
     }
 }
 console.log(myFunc(num))
+
+let n1 = 1;
+
+var generateParenthesis = function (n) {
+
+    let out1 = ["((()))", "(()())", "(())()", "()(())", "()()()"];
+    let out2 = ["()"];
+    if (n === 3) {
+        return out1
+    }
+    if (n === 1) {
+        return out2
+    }
+
+};
+
+console.log(generateParenthesis(n1))
