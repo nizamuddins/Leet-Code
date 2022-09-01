@@ -26,3 +26,4 @@ var generateParenthesis = function (n) {
     }
 };
 console.log(generateParenthesis(n1))
+
