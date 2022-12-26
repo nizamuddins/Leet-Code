@@ -1,4 +1,4 @@
-let x1 = 121;
+let x1 = 1221;
 var isPalindrome = function (x) {
     let x2 = String(x);
     for (let i = 0; i < x2.length; i++) {
