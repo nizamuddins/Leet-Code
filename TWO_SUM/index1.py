@@ -26,3 +26,20 @@ def myfunc(array, jersey):
 
 output = myfunc(arr,jersy);
 print(output)
+
+class ListNode:
+    def __init__(self,val):
+        self.val = val;
+        self.next = None;
+
+
+head1 = ListNode(2);
+head1.next = ListNode(4);
+head1.next.next =  ListNode(3);
+
+head2 =  ListNode(5);
+head2.next =  ListNode(6);
+head2.next.next =  ListNode(4);
+
+print(head1,head2)
+
