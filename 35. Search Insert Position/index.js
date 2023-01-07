@@ -37,7 +37,9 @@
 
 
 // 5. Search Insert position (LC-35) without inbuilt
+// BinarySearch
 
+// -------------
 let nums = [1,3,5,6];
 let target = 7;
  var searchInsert = function(nums, target) {
