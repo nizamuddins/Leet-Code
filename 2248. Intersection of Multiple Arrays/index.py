@@ -22,3 +22,5 @@ class Solution:
 
 result = Solution();
 print(result.intersection(nums))
+
+

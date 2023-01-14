@@ -1,29 +1,18 @@
-arr = [ 1, 3, 2];
-jersy = [1, 3, 2];
+# two pointers
 
-def myfunc(array, jersey):
-    flag = 0;
-    val1 = 0;
-    for i in range(len(array)):
-        if array[i] != jersey[i]:
-            flag = 1;
-            break;
-    if flag == 0:
-        val1 += 1;
-        return val1;
-    for i in range(len(array)+1):
-        for j in range(len(jersey)):
-            if i == len(array):
-                jersey.sort()
-                val1 += 1;
-                return val1;
-            elif jersey[j] == array[i]:
-                next = jersey[i];
-                jersey[i] = jersey[j];
-                jersey[j] = next;
-                val1 += 1;
-                break;
-
-output = myfunc(arr,jersy);
-print(output)
-
+nums = [3,2,4]
+target = 6
+class Solution:
+    def twoSum(self, nums, target):
+        length = len(nums);
+        i = 0;
+        while i < length:
+            val = target-nums[i];
+            j = i+1;
+            while j < length:
+                if val == nums[j]:
+                    return [i,j];
+                j += 1;
+            i += 1;
+result = Solution();
+print(result.twoSum(nums,target))
