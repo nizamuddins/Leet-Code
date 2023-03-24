@@ -12,7 +12,7 @@ var nextPermutation = function(nums) {
                 } 
             }
         break;
-        }
+        } 
         
     }
     if(k != " "){
